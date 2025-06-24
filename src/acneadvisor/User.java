@@ -1,21 +1,21 @@
 package acneadvisor;
 
+import java.util.List;
+
 public class User {
     private String name;
-    private String[] skinType;
+    private List<String> skinTypes;
 
-    public User(String name, String[] skinType){
+    public User(String name, List<String> skinTypes) {
         this.name = name;
-        this.skinType = skinType;
+        this.skinTypes = skinTypes;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public String[] getSkinType(){
-        return skinType;
+
+    public List<String> getSkinTypes() {
+        return skinTypes;
     }
-
-
-
 }
